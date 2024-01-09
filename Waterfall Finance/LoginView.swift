@@ -33,13 +33,20 @@ extension LoginView {
         backgroundColor = .orange
         userNameTextField.translatesAutoresizingMaskIntoConstraints = false
         userNameTextField.placeholder = "Username"
+        
         // register this view for delegate of textField
         // this means text field will send messages through its protocol
         userNameTextField.delegate = self
     }
     
     func layout() {
+        addSubview(userNameTextField)
         
+        NSLayoutConstraint.activate([
+            userNameTextField.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
+            userNameTextField.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
+            trailingAnchor.constraint(equalToSystemSpacingAfter: userNameTextField.trailingAnchor, multiplier: 1)
+        ])
     }
 }
 
@@ -59,6 +66,7 @@ extension LoginView: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        <#code#>
+        func textFieldDidEndEditing(_ textField: UITextField) {
+        }
     }
 }
