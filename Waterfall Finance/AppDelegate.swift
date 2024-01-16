@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
 //        window?.rootViewController = LoginViewController()
-//        window?.rootViewController = OnboardingContainerViewController()
-        window?.rootViewController = OnboardingViewController(heroImageName: "delorean", titleText: "Waterfall Finance is faster, easier to use, and has a brand new look that will make you feel like you're back in 89'")
+        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingViewController(heroImageName: "delorean", titleText: "Waterfall Finance is faster, easier to use, and has a brand new look that will make you feel like you're back in 89'")
         return true
     }
 
