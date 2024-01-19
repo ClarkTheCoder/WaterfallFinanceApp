@@ -130,7 +130,7 @@ extension LoginViewController {
             return
         }
         
-        if username.isEmpty || password.isEmpty {
+        if username.isEmpty ||   password.isEmpty {
             configureView(withMessage: "Please enter a username or password")
             return
         }
