@@ -75,7 +75,7 @@ extension AccountSummaryViewController {
     private func fetchData() {
         let savings = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Savings")
         let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Gold")
-        let investment = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Tax-sfree savings")
+        let investment = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Tax-free savings")
         
         // add ViewModel instances to accounts array
         accounts.append(savings)
