@@ -147,11 +147,14 @@ extension AccountSummaryCell {
         
         switch vm.accountType {
         case .Banking:
-            break
+            underlineView.backgroundColor = appColor
+            balanceLabel.text = "Current Balance"
         case .Investment:
-            break
+            underlineView.backgroundColor = .systemOrange
+            balanceLabel.text = "Current Balance"
         case .CreditCard:
-            break
+            underlineView.backgroundColor = .systemPurple
+            balanceLabel.text = "Value"
         }
     }
 }
